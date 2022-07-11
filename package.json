@@ -1,5 +1,6 @@
 {
-  "name": "@example/basics",
+  "name": "@powerd6/insider",
+  "description": "The main hub for all project-related information for contributors.",
   "version": "0.0.1",
   "private": true,
   "scripts": {
