@@ -1,0 +1,21 @@
+---
+import Header from "../components/Header.astro";
+---
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>powerd6/insider</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <Header links={[
+      {displayText: "Home" , url: "/"},
+      {displayText: "Getting Started" , url: "/getting-started"},
+      {displayText: "Contributing" , url: "/contributing"},
+      {displayText: "Sourcecode" , url: "https://github.com/powerd6/insider"}
+      ]} />
+    <main class="container p-10 m-auto">
+      <slot /> <!-- content is injected here -->
+    </main>
+  </body>
+</html>
