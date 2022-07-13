@@ -1,4 +1,4 @@
-export default {
+export const CONFIG = {
   title: "@powerd6/insider",
   organization_url: "https://github.com/powerd6/",
   repository_name: "insider",
