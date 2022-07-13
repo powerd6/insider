@@ -1,7 +1,11 @@
 ---
 import BaseLayout from "@layouts/BaseLayout.astro";
+
+const { content } = Astro.props;
+
 ---
 <BaseLayout>
+  <h1 class="text-3xl mb-4 font-bold">{content.title}</h1>
   <article class="prose lg:prose-xl">
     <slot /> <!-- markdown content is rendered here -->
   </article>
