@@ -1,9 +1,8 @@
 ---
 import Header from "@components/Header.astro";
 import Footer from "@components/Footer.astro";
-import json from '@static/data.json';
+import { title } from '@static/config';
 
-const { title } = json;
 const { content = {
   title: title
 } } = Astro.props;
