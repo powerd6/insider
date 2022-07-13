@@ -1,5 +1,5 @@
 ---
-layout: "@layouts/BaseLayout.astro"
+layout: "@layouts/MarkdownLayout.astro"
 title: Module
 description: A package with powerd6 data.
 ---
