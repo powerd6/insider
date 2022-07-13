@@ -9,7 +9,7 @@ const glossary = await Astro.glob('../pages/glossary/*.md');
     {glossary.map((term) =>
     <article class="border border-solid border-gray-300 rounded-xl shadow-xl shadow-blue-300 p-4 mx-4">
       <a href={term.url}>
-        <h3>{term.frontmatter.title}</h3>
+        <h3 class="text-lg">{term.frontmatter.title}</h3>
       </a>
       <p class="leading-tight">{term.frontmatter.description}</p>
     </article>
