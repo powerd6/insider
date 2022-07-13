@@ -10,6 +10,9 @@ const glosarry = await Astro.glob('../pages/glossary/*.md');
       <a href={item.url}>
         {item.frontmatter.title}
       </a>
+      <p>
+        {item.frontmatter.description}
+      </p>
     </li>)}
   </ul>
 </BaseLayout>
