@@ -1,8 +1,12 @@
 ---
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
+import Header from "@components/Header.astro";
+import Footer from "@components/Footer.astro";
+import json from '@static/data.json';
 
-const { content = 'powerd6/insider' } = Astro.props;
+const { title } = json;
+const { content = {
+  title: title
+} } = Astro.props;
 ---
 <html>
   <head>

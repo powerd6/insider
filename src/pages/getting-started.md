@@ -1,6 +1,6 @@
 ---
 title: Getting started
-layout: ../layouts/BaseLayout.astro
+layout: @layouts/BaseLayout.astro
 ---
 Welcome to the powerd6 project!
 
