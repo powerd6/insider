@@ -1,7 +1,7 @@
 ---
 layout: "@layouts/BaseLayout.astro"
 title: Module
-description: Packages with content.
+description: A package with powerd6 data.
 ---
 Everything in powerd6 is a module.
 

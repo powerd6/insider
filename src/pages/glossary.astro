@@ -1,15 +1,15 @@
 ---
 import BaseLayout from "@layouts/BaseLayout.astro";
 
-interface Frontmatter {
-  title: string;
-  description?: string;
-  url: string;
-}
-
-const glosarry = await Astro.glob<Frontmatter>('../pages/glossary/*.md');
+const glosarry = await Astro.glob('../pages/glossary/*.md');
 ---
 
 <BaseLayout>
-  {glosarry.map((item) => <li>{item.title}</li>)}
+  <ul>
+    {glosarry.map((item) => <li>
+      <a href={item.url}>
+        {item.frontmatter.title}
+      </a>
+    </li>)}
+  </ul>
 </BaseLayout>
