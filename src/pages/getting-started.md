@@ -1,5 +1,5 @@
 ---
-layout: "@layouts/BaseLayout.astro"
+layout: "@layouts/MarkdownLayout.astro"
 title: Getting started
 ---
 Welcome to the powerd6 project!
