@@ -1,27 +1,21 @@
 ---
 import projectLogo from '@public/project.svg';
+import json from '@static/data.json';
 
-export interface Props {
-  links: {
-    displayText: string;
-    url: string;
-  }[];
-}
-
-const { links = [] } = Astro.props as Props;
+const { titile, organization_url, repository_name, header } = json;
 ---
 
 <header class="text-gray-600 body-font">
   <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
     <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0" href="/">
       <img class="max-h-8" src={projectLogo} />
-      <span class="ml-3 text-xl">@powerd6/insider</span>
+      <span class="ml-3 text-xl">{title}</span>
     </a>
     <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-      {links.map(
+      {header.links.map(
       (link)=>
-      <a class="mr-5 hover:text-gray-900" href={link.url}>
-        {link.displayText}
+      <a class="mr-5 hover:text-gray-900" href={link.href}>
+        {link.display_text}
       </a>
       )}
     </nav>

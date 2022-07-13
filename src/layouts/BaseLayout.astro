@@ -15,12 +15,7 @@ const { content = {
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body class="flex flex-col h-screen">
-    <Header links={[
-      {displayText: "Home" , url: "/"},
-      {displayText: "Getting Started" , url: "/getting-started"},
-      // {displayText: "Contributing" , url: "/contributing"},
-      {displayText: "Sourcecode" , url: "https://github.com/powerd6/insider"}
-      ]} />
+    <Header />
     <main class="container p-10 m-auto flex-grow">
       <slot /> <!-- content is injected here -->
     </main>
