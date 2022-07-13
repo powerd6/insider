@@ -9,6 +9,10 @@ export const CONFIG = {
         href: "/getting-started",
       },
       {
+        display_text: "Glossary",
+        href: "/glossary",
+      },
+      {
         display_text: "Contributing",
         href: "/contributing",
       },
