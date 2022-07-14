@@ -10,3 +10,5 @@ Modules are packages that contain:
 - Content
 - Rendering rules
 - Metadata
+
+Modules can be combined with other modules.
