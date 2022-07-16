@@ -19,7 +19,7 @@ function sortByTitle(a, b) {
 
 <BaseLayout>
   <section class="body-font xl:max-w-6xl xl:m-auto">
-    <h1 class="text-3xl mb-4 font-bold">Glossary</h1>
+    <h1 class="text-5xl mb-4 font-bold">Glossary</h1>
     <div class="text-gray-600 container mx-auto grid grid-cols-2 md:grid-cols-3 gap-2 gap-y-4 px-5 py-24 place-content-stretch">
       {glossary.sort(sortByTitle).map((term) =>
       <GlossaryItem title={term.frontmatter.title} description={term.frontmatter.description} url={term.url} />)}
