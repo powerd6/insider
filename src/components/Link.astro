@@ -1,12 +1,8 @@
 ---
-export interface Props {
-  href: string;
-  extra_classes?: string[];
-}
-
-const { href, extra_classes } = Astro.props as Props;
+export type Props = astroHTML.JSX.AnchorHTMLAttributes;
+const { href, ...attrs } = Astro.props as Props;
 ---
 
-<a href={href} class={`text-blue-500 hover:text-blue-700 hover:underline ${extra_classes?.join(" ")}`}>
+<a href={href} class={`text-blue-500 hover:text-blue-700 hover:underline ${attrs.class}`}>
   <slot />
 </a>
