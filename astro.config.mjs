@@ -5,5 +5,6 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind(), sitemap()]
+  site: "https://insider.powerd6.org",
+  integrations: [tailwind(), sitemap()],
 });
