@@ -1,6 +1,12 @@
 ---
-layout: "@layouts/BaseLayout.astro"
+layout: "@layouts/MarkdownLayout.astro"
+title: Must Know
 ---
-# Pending writing...
+These articles are all considered required readings.
 
-Sorry, this page is a placeholder.
+The knowledge from each of them is essential and will be referenced throughout the project.
+
+- [Project objectives](/contributors/must-know/project-objectives)
+- [Terminology](/contributors/must-know/terminology)
+- [Contributor expectations](/contributors/must-know/contributor-expectations)
+- [Ways of working](/contributors/must-know/ways-of-working)
