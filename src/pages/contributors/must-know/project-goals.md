@@ -7,7 +7,7 @@ Here are the main goals of the project:
 
 ## Improve the experience of playing role-playing games with custom content
 
-The current experience of a group of players looking to use home-brews is chaotic and scattered.
+The current experience of a group of players looking to use homebrewed content is chaotic and scattered.
 
 Combining official rulebooks, items or monster source from other books, custom rules specific to the group, etc is often a tiring experience and requires all involved to be mindful of the content they are reading and continuously consider how each piece of content affects the rest. 
 
