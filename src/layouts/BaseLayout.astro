@@ -2,12 +2,14 @@
 import Content from "@components/Content.astro";
 import Footer from "@components/Footer.astro";
 import Header from "@components/Header.astro";
+import { website_name } from "@data/config";
 
 export interface Props {
-  title: string;
+  title?: string;
 }
 
-const { title } = Astro.props as Props;
+
+const { title = website_name } = Astro.props as Props;
 ---
 
 <html lang="en">
@@ -20,7 +22,7 @@ const { title } = Astro.props as Props;
 </head>
 
 <body class="flex flex-col h-screen justify-between">
-  <Header title="powerd6/insider" links={[ {title:"github", href: "https://github.com/powerd6" }]} />
+  <Header title={website_name}/>
   <Content>
     <slot />
   </Content>

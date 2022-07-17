@@ -1,6 +1,7 @@
 ---
 import { execSync } from "child_process";
 import Link from "./Link.astro";
+import { repository_link } from "@data/config";
 
 const gitCommitHash = execSync("git rev-parse HEAD").toString().trim();
 
@@ -12,7 +13,7 @@ const buildDate = currentDate.toDateString();
   <div class=" container mx-auto flex flex-wrap justify-around flex-col md:flex-row items-center p-5">
     <p>Maintened with love by the powerd6 community.</p>
     <p>Build on {buildDate} with commit
-      <Link href={`https://github.com/powerd6/insider/commit/${gitCommitHash}`}>{gitCommitHash.substring(0,7)}</Link>
+      <Link href={`${repository_link}/commit/${gitCommitHash}`}>{gitCommitHash.substring(0,7)}</Link>
     </p>
   </div>
 </footer>
