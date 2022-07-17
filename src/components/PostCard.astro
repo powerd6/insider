@@ -1,0 +1,18 @@
+---
+import Link from "./Link.astro";
+
+export interface Props {
+  title: string;
+  description?: string;
+  url: string;
+}
+
+const { title, description, url } = Astro.props as Props;
+---
+
+<div class="rounded p-5 shadow-md ring ring-blue-300">
+  <Link href={url} class="">
+  <h1>{title}</h1>
+  {description?<p>{description}</p>:''}
+  </Link>
+</div>
