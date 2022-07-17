@@ -43,6 +43,7 @@
     "prefix": "term",
     "body": [
 			"---",
+      "layout: \"@layouts/MarkdownLayout.astro\"",
       "title: ${1:title}",
       "description: ${2:description}",
 			"---",
