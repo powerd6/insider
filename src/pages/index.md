@@ -1,6 +1,7 @@
 ---
-layout: '@layouts/BaseLayout.astro'
+layout: "@layouts/BaseLayout.astro"
 ---
+
 # Welcome to powerd6's insider pages!
 
 These pages are aimed at writers and contributors to the project, and they contain all manner of documentation and guides to work with powerd6.
