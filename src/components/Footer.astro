@@ -2,7 +2,9 @@
 import { execSync } from "child_process";
 import Link from "./Link.astro";
 import { repository_link } from "@data/config";
-import {strftime} from "mout/date";
+import moutDate from 'mout/date.js';
+
+const { strftime } = moutDate;
 
 const gitCommitHash = execSync("git rev-parse HEAD").toString().trim();
 

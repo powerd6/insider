@@ -1,7 +1,9 @@
 ---
 import PostCard from "@components/PostCard.astro";
 import BaseLayout from "@layouts/BaseLayout.astro";
-import { sortBy } from "mout/array";
+import moutArray from "mout/array.js";
+
+const { sortBy } = moutArray;
 
 interface Frontmatter {
   title: string;
