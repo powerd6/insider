@@ -1,6 +1,7 @@
 ---
 layout: "@layouts/BaseLayout.astro"
 ---
+
 <!-- TODO: Write this page -->
 
 # Pending writing...
