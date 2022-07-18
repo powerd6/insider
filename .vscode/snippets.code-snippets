@@ -22,6 +22,7 @@
 			"---",
 			"layout: \"@layouts/BaseLayout.astro\"",
 			"---",
+      "<!-- TODO: Write this page -->",
 			"$0"
 		],
     "description": "A barebones markdown page for Astro"
@@ -34,6 +35,7 @@
 			"layout: \"@layouts/MarkdownLayout.astro\"",
       "title: ${1:title}",
 			"---",
+      "<!-- TODO: Write this page -->",
 			"$0"
 		],
     "description": "A basic markdown page for Astro with extra fields"
@@ -47,6 +49,7 @@
       "title: ${1:title}",
       "description: ${2:description}",
 			"---",
+      "<!-- TODO: Describe this term in greater length -->",
 			"$0"
 		],
     "description": "The terminology entry for a specific entry"
