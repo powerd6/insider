@@ -1,0 +1,22 @@
+---
+import Link from "./Link.astro";
+
+import {header_links} from "@data/config";
+
+export interface Props {
+  title: string;
+}
+
+const { title } = Astro.props as Props;
+---
+
+<header class="bg-gray-200 sticky py-2">
+  <div class="container mx-auto flex flex-wrap justify-between flex-col md:flex-row items-center p-5">
+    <Link href="/">{title}</Link>
+    <nav>
+      {header_links.map(link=>
+      <Link href={link.href} class="px-2">{link.text}</Link>
+      )}
+    </nav>
+  </div>
+</header>

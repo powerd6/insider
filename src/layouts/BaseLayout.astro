@@ -1,0 +1,32 @@
+---
+import Content from "@components/Content.astro";
+import Footer from "@components/Footer.astro";
+import Header from "@components/Header.astro";
+import { website_name } from "@data/config";
+
+export interface Props {
+  title?: string;
+}
+
+
+const { title = website_name } = Astro.props as Props;
+---
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <title>{title}</title>
+</head>
+
+<body class="flex flex-col h-screen justify-between">
+  <Header title={website_name}/>
+  <Content>
+    <slot />
+  </Content>
+  <Footer />
+</body>
+
+</html>

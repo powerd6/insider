@@ -1,0 +1,25 @@
+---
+import PostCard from "@components/PostCard.astro";
+import BaseLayout from "@layouts/BaseLayout.astro";
+import moutArray from "mout/array.js";
+
+const { sortBy } = moutArray;
+
+interface Frontmatter {
+  title: string;
+  description?: string;
+}
+
+const posts = sortBy(await Astro.glob<Frontmatter>('./terms/*.md'), p => p.frontmatter.title);
+---
+
+<BaseLayout title="Terminology">
+  <h1>Terminology</h1>
+  <p>Clicking each item will take you to a longer explanation of it, sometimes with examples.</p>
+  <ol class="flex flex-col justify-between">
+    {
+    posts.map(post=>
+    <PostCard title={post.frontmatter.title} description={post.frontmatter.description} url={post.url} />)
+    }
+  </ol>
+</BaseLayout>
