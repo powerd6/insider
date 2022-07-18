@@ -3,7 +3,9 @@
     "astro-build.astro-vscode",
     "bradlc.vscode-tailwindcss",
     "be5invis.toml",
-    "yzhang.markdown-all-in-one"
+    "yzhang.markdown-all-in-one",
+    "aaron-bond.better-comments",
+    "DavidAnson.vscode-markdownlint"
   ],
   "unwantedRecommendations": []
 }
