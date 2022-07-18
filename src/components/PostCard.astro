@@ -10,7 +10,7 @@ export interface Props {
 const { title, description, url } = Astro.props as Props;
 ---
 
-<div class="rounded p-5 shadow-md ring ring-blue-300">
+<div class="rounded p-5 shadow-md ring ring-blue-300 m-2">
   <Link href={url} class="">
   <h1>{title}</h1>
   {description?<p>{description}</p>:''}
