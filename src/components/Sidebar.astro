@@ -1,0 +1,13 @@
+---
+import ToggleButton from "@components/sidebar/ToggleButton";
+import StatefulSidebar from "@components/sidebar/StatefulSidebar";
+
+export interface Props {
+  title: string;
+  postsByCategory: object
+}
+
+const { title, postsByCategory } = Astro.props as Props;
+---
+<ToggleButton client:load />
+<StatefulSidebar client:load title={title} postsByCategory={postsByCategory} />
