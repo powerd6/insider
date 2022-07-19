@@ -1,0 +1,13 @@
+---
+import Content from "@components/Content.astro";
+import BaseLayout from "@layouts/BaseLayout.astro";
+
+const {content} = Astro.props;
+---
+<BaseLayout title={content.title} showScrollToTop={true}>
+  <slot name="sidebar"/>
+  <Content>
+    <h1>{content.title}</h1>
+    <slot />
+  </Content>
+</BaseLayout>
