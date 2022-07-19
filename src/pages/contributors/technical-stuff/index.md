@@ -1,5 +1,5 @@
 ---
-layout: "@layouts/BaseLayout.astro"
+layout: "@layouts/BasicLayout.astro"
 ---
 
 <!-- TODO: Write this page -->

@@ -1,5 +1,5 @@
 ---
-layout: "@layouts/MarkdownLayout.astro"
+layout: "@layouts/TerminologyMdLayout.astro"
 title: Module
 description: Modules are a packaged building block that can be transformed into a book.
 ---

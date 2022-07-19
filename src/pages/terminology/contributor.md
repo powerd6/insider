@@ -1,5 +1,5 @@
 ---
-layout: "@layouts/MarkdownLayout.astro"
+layout: "@layouts/TerminologyMdLayout.astro"
 title: Contributor
 description: A person that is helping the project in any capacity.
 ---

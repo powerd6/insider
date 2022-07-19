@@ -1,5 +1,5 @@
 export const header_links: { href: string; text: string }[] = [
-  { href: "/contributors/must-know/terminology", text: "terminology" },
+  { href: "/terminology", text: "terminology" },
   { href: "https://github.com/powerd6", text: "github" },
 ];
 
