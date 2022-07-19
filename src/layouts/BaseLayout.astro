@@ -25,7 +25,7 @@ const { title = website_name, showScrollToTop = false } = Astro.props as Props;
   {showScrollToTop?
   <ScrollToTop />:''}
   <Header title={website_name} />
-    <slot />
+  <slot />
   <Footer />
 </body>
 

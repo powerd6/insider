@@ -3,8 +3,9 @@ import TerminologySidebar from "@components/TerminologySidebar.astro";
 import BaseLayout from "@layouts/BaseLayout.astro";
 import Content from "@components/Content.astro";
 
-const {content} = Astro.props;
+const { content } = Astro.props;
 ---
+
 <BaseLayout title={content.title} showScrollToTop={true}>
   <div class="flex h-full">
     <TerminologySidebar />

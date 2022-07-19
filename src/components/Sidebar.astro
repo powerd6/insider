@@ -9,5 +9,6 @@ export interface Props {
 
 const { title, postsByCategory } = Astro.props as Props;
 ---
+
 <ToggleButton client:load />
 <StatefulSidebar client:load title={title} postsByCategory={postsByCategory} />

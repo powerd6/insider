@@ -13,8 +13,9 @@ interface Frontmatter {
 
 const posts = await Astro.glob<Frontmatter>('../pages/terminology/*.md');
 
-const postsForSidebar = posts.map(post=>{return {url:post.url, title: post.frontmatter.title}})
+const postsForSidebar = posts.map(post => { return { url: post.url, title: post.frontmatter.title } })
 
 const postsByLetter = groupBy(postsForSidebar, p => p.title.charAt(0))
 ---
+
 <Sidebar title="Terms" postsByCategory={postsByLetter} />

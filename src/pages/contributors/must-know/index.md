@@ -2,6 +2,7 @@
 layout: "@layouts/MdLayout.astro"
 title: Must Know
 ---
+
 These articles are all considered required readings.
 
 The knowledge from each of them is essential and will be referenced throughout the project.
