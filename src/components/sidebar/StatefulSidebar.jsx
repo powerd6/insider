@@ -11,7 +11,7 @@ export default function StatefulSidebar({ title, postsByCategory, currentPage })
     return trim(currentPage, ['/', ' ']) == trim(href, ['/', ' ']);
   }
 
-  return <aside class={`relative bg-gray-100 transition-all duration-500 p-2 w-52 h-full rounded-r-xl ${$isSidebarOpen ? "left-0" : "-left-52 -ml-52"}`}>
+  return <aside class={`relative bg-gray-100 transition-all duration-500 p-2 w-52 h-full rounded-r-md ${$isSidebarOpen ? "left-0" : "-left-52 -ml-52"}`}>
     <nav class=" mt-6 ">
       <h1 class="text-xl p-2">{title}</h1>
       <ol class="list-none p-2 grid grid-cols-1 gap-4">
