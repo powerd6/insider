@@ -7,8 +7,9 @@ export interface Props {
   postsByCategory: object
 }
 
-const { title, postsByCategory } = Astro.props as Props;
+const { title, postsByCategory  } = Astro.props as Props;
+const { pathname } = Astro.canonicalURL;
 ---
 
 <ToggleButton client:load />
-<StatefulSidebar client:load title={title} postsByCategory={postsByCategory} />
+<StatefulSidebar client:load title={title} postsByCategory={postsByCategory} currentPage={pathname} />
