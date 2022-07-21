@@ -8,4 +8,4 @@ While [modules](/terminology/module) are building block for external users, cont
 
 Content can take numerous shapes and define various types of things.
 
-The type and shape of a piece of content is called it's [structure](/terminology/content-structure).
+The structure and shape of a piece of content is called it's [type](/terminology/content-type).
