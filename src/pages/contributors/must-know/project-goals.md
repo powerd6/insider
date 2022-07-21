@@ -1,5 +1,5 @@
 ---
-layout: "@layouts/MarkdownLayout.astro"
+layout: "@layouts/MdLayout.astro"
 title: Project Goals
 ---
 
@@ -9,7 +9,7 @@ Here are the main goals of the project:
 
 The current experience of a group of players looking to use homebrewed content is chaotic and scattered.
 
-Combining official rulebooks, items or monster source from other books, custom rules specific to the group, etc is often a tiring experience and requires all involved to be mindful of the content they are reading and continuously consider how each piece of content affects the rest. 
+Combining official rulebooks, items or monster source from other books, custom rules specific to the group, etc is often a tiring experience and requires all involved to be mindful of the content they are reading and continuously consider how each piece of content affects the rest.
 
 By enabling the creation of a single source of truth for rules and content (items, monsters, spells, etc), groups of players will still have the control they previously had, without the burden of maintaining and curating sprawling piles of books.
 

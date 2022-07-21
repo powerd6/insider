@@ -1,15 +1,15 @@
 ---
-import Content from "@components/Content.astro";
 import Footer from "@components/Footer.astro";
 import Header from "@components/Header.astro";
+import ScrollToTop from "@components/ScrollToTop.astro";
 import { website_name } from "@data/config";
 
 export interface Props {
   title?: string;
+  showScrollToTop?: boolean;
 }
 
-
-const { title = website_name } = Astro.props as Props;
+const { title = website_name, showScrollToTop = false } = Astro.props as Props;
 ---
 
 <html lang="en">
@@ -22,10 +22,10 @@ const { title = website_name } = Astro.props as Props;
 </head>
 
 <body class="flex flex-col h-screen justify-between">
-  <Header title={website_name}/>
-  <Content>
-    <slot />
-  </Content>
+  {showScrollToTop?
+  <ScrollToTop />:''}
+  <Header title={website_name} />
+  <slot />
   <Footer />
 </body>
 

@@ -1,6 +1,6 @@
 ---
 import { execSync } from "child_process";
-import Link from "./Link.astro";
+import Link from "@components/Link.astro";
 import { repository_link } from "@data/config";
 import moutDate from 'mout/date.js';
 
@@ -13,8 +13,8 @@ const buildDate = strftime(currentDate, '%d/%m/%Y');
 const buildTime = strftime(currentDate, ' %H:%M');
 ---
 
-<footer class="bg-gray-200 mt-5">
-  <div class=" container mx-auto flex flex-wrap justify-around flex-col md:flex-row items-center p-5">
+<footer class="bg-gray-200">
+  <div class=" container mx-auto flex flex-wrap justify-around flex-row items-center p-5">
     <p>Maintened with love by the powerd6 community.</p>
     <p>Build on {buildDate} at {buildTime} with commit
       <Link href={`${repository_link}/commit/${gitCommitHash}`}>{gitCommitHash.substring(0,7)}</Link>

@@ -1,0 +1,18 @@
+---
+import Content from "@components/Content.astro";
+import { website_name } from "@data/config";
+import BaseLayout from "@layouts/BaseLayout.astro";
+
+export interface Props {
+  title?: string;
+  showScrollToTop?: boolean;
+}
+
+const { title = website_name } = Astro.props as Props;
+---
+
+<BaseLayout title={title}>
+  <Content>
+    <slot />
+  </Content>
+</BaseLayout>

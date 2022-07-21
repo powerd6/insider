@@ -1,0 +1,21 @@
+---
+import moutArray from "mout/array.js";
+import Link from "@components/Link.astro";
+import Sidebar from "./Sidebar.astro";
+
+
+const { sortBy, groupBy } = moutArray;
+
+interface Frontmatter {
+  title: string;
+  description?: string;
+}
+
+const posts = await Astro.glob<Frontmatter>('../pages/terminology/*.md');
+
+const postsForSidebar = posts.map(post => { return { url: post.url, title: post.frontmatter.title } })
+
+const postsByLetter = groupBy(postsForSidebar, p => p.title.charAt(0))
+---
+
+<Sidebar title="Terms" postsByCategory={postsByLetter} />

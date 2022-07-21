@@ -27,12 +27,12 @@
 		],
     "description": "A barebones markdown page for Astro"
   },
-  "Markdown Astro Page with MarkdownLayout (default)": {
+  "Markdown Astro Page with MdLayout (default)": {
     "scope": "markdown",
     "prefix": "mdp",
     "body": [
 			"---",
-			"layout: \"@layouts/MarkdownLayout.astro\"",
+			"layout: \"@layouts/MdLayout.astro\"",
       "title: ${1:title}",
 			"---",
       "<!-- TODO: Write this page -->",
@@ -45,7 +45,7 @@
     "prefix": "term",
     "body": [
 			"---",
-      "layout: \"@layouts/MarkdownLayout.astro\"",
+      "layout: \"@layouts/MdLayout.astro\"",
       "title: ${1:title}",
       "description: ${2:description}",
 			"---",
