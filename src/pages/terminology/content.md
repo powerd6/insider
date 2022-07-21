@@ -1,5 +1,5 @@
 ---
-layout: "@layouts/MdLayout.astro"
+layout: "@layouts/TerminologyMdLayout.astro"
 title: Content
 description: Content is how we call a aggregation of data that conveys some meaning.
 ---
@@ -8,4 +8,4 @@ While [modules](/terminology/module) are building block for external users, cont
 
 Content can take numerous shapes and define various types of things.
 
-The type and shape of a piece of content is called it's structure.
+The type and shape of a piece of content is called it's [structure](/terminology/content-structure).
