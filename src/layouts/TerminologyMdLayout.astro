@@ -2,6 +2,7 @@
 import TerminologySidebar from "@components/TerminologySidebar.astro";
 import BaseLayout from "@layouts/BaseLayout.astro";
 import Content from "@components/Content.astro";
+import Link from "@components/Link.astro";
 
 const { content } = Astro.props;
 ---
@@ -12,6 +13,13 @@ const { content } = Astro.props;
     <Content>
       <h1>{content.title}</h1>
       <slot />
+      {content.external_references ? <section class="border-t-2 border-dotted p-2 text-sm mt-12">
+        <h1>External References:</h1>
+        <ul>
+          {content.external_references.map(ref=><li><Link href={ref.href}>{ref.title}</Link></li>)}
+        </ul>
+      </section> : ''}
+      
     </Content>
   </div>
 </BaseLayout>

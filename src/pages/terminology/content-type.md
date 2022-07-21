@@ -2,6 +2,9 @@
 layout: "@layouts/TerminologyMdLayout.astro"
 title: Content Type
 description: A content's type is the shape of a piece of content
+external_references:
+  - title: 'Experiment: Defining structure for content authoring'
+    href: https://github.com/powerd6/experiments/tree/1-define-structure-for-content-authoring
 ---
 The combination of all fields that a [content](/terminology/content) piece can have are it's type.
 
