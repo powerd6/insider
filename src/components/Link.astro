@@ -3,6 +3,6 @@ export type Props = astroHTML.JSX.AnchorHTMLAttributes;
 const { href, ...attrs } = Astro.props as Props;
 ---
 
-<a href={href} class={`text-blue-500 hover:text-blue-700 hover:underline ${attrs.class}`}>
+<a href={href} class={`text-blue-500 hover:text-blue-700 hover:underline ${attrs.class}`} target={attrs.target || href.toString().startsWith('http')?'_blank':'_self'}>
   <slot />
 </a>

@@ -45,9 +45,12 @@
     "prefix": "term",
     "body": [
 			"---",
-      "layout: \"@layouts/MdLayout.astro\"",
+      "layout: \"@layouts/TerminologyMdLayout.astro\"",
       "title: ${1:title}",
       "description: ${2:description}",
+      "external_references:",
+      " - title: Reference text",
+      "   href: url",
 			"---",
       "<!-- TODO: Describe this term in greater length -->",
 			"$0"
