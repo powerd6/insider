@@ -1,0 +1,11 @@
+name: Check PRs
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  lint-pr:
+    uses: powerd6/.github/.github/workflows/pr-lint.yml@main
+    secrets: inherit
